@@ -3,6 +3,23 @@
 
 使用MarkdownPP和pandoc构建。
 
+# Conventions
+
+我们使用的编写路径是类似如下结构：
+
+```
++--- sources
+     |
+     +--- images
+     |    |
+     |    +--- photo.jpg
+     |
+     +--- document.md
+```
+
+即每篇文章使用的图片资源都在当前文章所在目录下的images子目录中，所以，在引用图片的时候，只要使用`![](images/xx.png)`形式即可。
+
+
 # Gotchas
 
 ## image not found error

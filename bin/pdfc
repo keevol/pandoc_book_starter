@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+bin=`dirname "${BASH_SOURCE-$0}"`
+basedir=`cd "$bin/../">/dev/null; pwd`
+
+if [ $bin = "bin" ] ; then
+  source bin/prepare.sh
+  pandoc --toc-depth=4 --pdf-engine=xelatex --template=${HOME}/FuqiangWorks/templates/pandoc/zh.latex -V fontsize=12pt -f markdown+smart "index.md" -o "index.pdf"
+  echo '>> pdf format output successfully.'
+else
+  echo "you must run under `$basedir` directory."
+fi
