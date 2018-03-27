@@ -1,0 +1,12 @@
+% your book title
+% 王福强 - fujohnwang AT gmail DOTA com
+% 2018-03-27
+
+
+# chapter1
+
+!INCLUDE "chapters/chapter1/section.md"
+
+# chapter2
+
+!INCLUDE "chapters/chapter2/section.md"
